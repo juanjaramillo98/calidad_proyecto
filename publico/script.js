@@ -32,7 +32,6 @@ function triangulo(){
     }
     if (lado1 === lado2 && lado2 === lado3) {
         RespuestaT.innerHTML = `<h3>El triagulo es equilatero<h3/>`;
-        console.log('equilatero')
     }else{
         if (lado1 == lado2 || lado2 == lado3 || lado1 == lado3) {
             RespuestaT.innerHTML = `<h3>El triagulo es isosceles<h3/>`;       
@@ -66,7 +65,6 @@ function cuadrado(){
 
     if (lado1 === lado2 && lado2 === lado3 && lado3 === lado4) {
         RespuestaC.innerHTML = `<h3>El cuadrilatero es un cuadrado<h3/>`;
-        console.log('equilatero')
     }else{
         if (lado1 == lado3 && lado2 == lado4) {
             RespuestaC.innerHTML = `<h3>El cuadrillatero es un rectangulo<h3/>`;       
