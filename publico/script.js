@@ -15,11 +15,13 @@ function triangulo(){
     var lado1 = Tlado1.valueAsNumber;
     var lado2 = Tlado2.valueAsNumber;
     var lado3 = Tlado3.valueAsNumber;
-
     var arr = [ lado1, lado2, lado3];
     function comparar ( a, b ){ return a - b; }
     arr.sort( comparar );  // [ 1, 5, 40,]
-
+    if (arr.includes(NaN)) {
+        RespuestaT.innerHTML = `<h3>llene todos los campos<h3/>`;
+        return
+    }
     if (arr[0]==0) {
         RespuestaT.innerHTML = `<h3>en ningun campo 0 es valido<h3/>`;
         return
@@ -49,7 +51,10 @@ function cuadrado(){
     var arr = [ lado1, lado2, lado3, lado4];
     function comparar ( a, b ){ return a - b; }
     arr.sort( comparar );  // [ 1, 2, 3, 4 ]
-
+    if (arr.includes(NaN)) {
+        RespuestaC.innerHTML = `<h3>llene todos los campos<h3/>`;
+        return
+    }
     if (arr[0]==0) {
         RespuestaC.innerHTML = `<h3>en ningun campo 0 es valido<h3/>`;
         return
