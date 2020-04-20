@@ -23,7 +23,7 @@ function triangulo(){
         return
     }
     if (arr[0]==0) {
-        RespuestaT.innerHTML = `<h3>En ningén campo 0 es valido<h3/>`;
+        RespuestaT.innerHTML = `<h3>En ningún campo 0 es valido<h3/>`;
         return
     }
     if (arr[0]+arr[1]<arr[2]) {
