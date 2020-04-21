@@ -77,7 +77,7 @@ function cuadrado(){
         if (lado1 == lado3 && lado2 == lado4) {
             RespuestaC.innerHTML = `
             <h3>El cuadrilátero es:</h3>
-            <img src="publicoimagenes/rectangulo.png">`;       
+            <img src="publico/imagenes/rectangulo.png">`;       
         }else{
             RespuestaC.innerHTML = `
             <h3>El cuadrilátero es un trapecio</h3>
