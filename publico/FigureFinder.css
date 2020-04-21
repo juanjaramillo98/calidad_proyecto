@@ -32,3 +32,7 @@ input[type=number], select {
   body{
       background-color: cyan;
   }
+
+  td{
+    vertical-align: top;
+  }
