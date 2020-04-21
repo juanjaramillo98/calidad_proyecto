@@ -27,7 +27,9 @@ function triangulo(){
         return
     }
     if (arr[0]+arr[1]<arr[2]) {
-        RespuestaT.innerHTML = `<h3>No se puede hacer un triangulo</h3>`;
+        RespuestaT.innerHTML = `
+        <h3>No se puede hacer un triangulo</h3>
+        <img src="publico/imagenes/notriangulo.png">`;
         return
     }
     if (lado1 === lado2 && lado2 === lado3) {
@@ -65,7 +67,9 @@ function cuadrado(){
         return
     }
     if (arr[0]+arr[1]+arr[2]<arr[3]) {
-        RespuestaC.innerHTML = `<h3>No se puede hacer un cuadrilátero</h3>`;
+        RespuestaC.innerHTML = `
+        <h3>No se puede hacer un cuadrilátero</h3>
+        <img src="publico/imagenes/nocuadrilatero.png">`;
         return
     }
 
