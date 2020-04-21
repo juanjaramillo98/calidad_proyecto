@@ -19,24 +19,30 @@ function triangulo(){
     function comparar ( a, b ){ return a - b; }
     arr.sort( comparar );  // [ 1, 5, 40,]
     if (arr.includes(NaN)) {
-        RespuestaT.innerHTML = `<h3>Llene todos los campos adecuadamente<h3/>`;
+        RespuestaT.innerHTML = `<h3>Llene todos los campos adecuadamente</h3>`;
         return
     }
     if (arr[0]==0) {
-        RespuestaT.innerHTML = `<h3>En ningún campo 0 es valido<h3/>`;
+        RespuestaT.innerHTML = `<h3>En ningún campo 0 es valido</h3>`;
         return
     }
     if (arr[0]+arr[1]<arr[2]) {
-        RespuestaT.innerHTML = `<h3>No se puede hacer un triangulo<h3/>`;
+        RespuestaT.innerHTML = `<h3>No se puede hacer un triangulo</h3>`;
         return
     }
     if (lado1 === lado2 && lado2 === lado3) {
-        RespuestaT.innerHTML = `<h3>El triángulo es equilatero<h3/>`;
+        RespuestaT.innerHTML = 
+        `<h3>El triángulo es:</h3>
+        <img src="publico/imagenes/equilatero.png">`;
     }else{
         if (lado1 == lado2 || lado2 == lado3 || lado1 == lado3) {
-            RespuestaT.innerHTML = `<h3>El triángulo es isósceles<h3/>`;       
+            RespuestaT.innerHTML = 
+            `<h3>El triángulo es:</h3>
+            <img src="publico/imagenes/isoseles.png">`;       
         }else{
-            RespuestaT.innerHTML = `<h3>El triángulo es escaleno<h3/>`;
+            RespuestaT.innerHTML = 
+            `<h3>El triángulo es:</h3>
+            <img src="publico/imagenes/escaleno.png">`;
         }
     }
 
@@ -51,25 +57,31 @@ function cuadrado(){
     function comparar ( a, b ){ return a - b; }
     arr.sort( comparar );  // [ 1, 2, 3, 4 ]
     if (arr.includes(NaN)) {
-        RespuestaC.innerHTML = `<h3>Llene todos los campos adecuadamente<h3/>`;
+        RespuestaC.innerHTML = `<h3>Llene todos los campos adecuadamente</h3>`;
         return
     }
     if (arr[0]==0) {
-        RespuestaC.innerHTML = `<h3>En ningún campo 0 es valido<h3/>`;
+        RespuestaC.innerHTML = `<h3>En ningún campo 0 es valido</h3>`;
         return
     }
     if (arr[0]+arr[1]+arr[2]<arr[3]) {
-        RespuestaC.innerHTML = `<h3>No se puede hacer un cuadrilátero<h3/>`;
+        RespuestaC.innerHTML = `<h3>No se puede hacer un cuadrilátero</h3>`;
         return
     }
 
     if (lado1 === lado2 && lado2 === lado3 && lado3 === lado4) {
-        RespuestaC.innerHTML = `<h3>El cuadrilátero es un cuadrado<h3/>`;
+        RespuestaC.innerHTML = `
+        <h3>El cuadrilátero es:</h3>
+        <img src="publico/imagenes/cuadrado.png">`;
     }else{
         if (lado1 == lado3 && lado2 == lado4) {
-            RespuestaC.innerHTML = `<h3>El cuadrilátero es un rectángulo<h3/>`;       
+            RespuestaC.innerHTML = `
+            <h3>El cuadrilátero es:</h3>
+            <img src="publicoimagenes/rectangulo.png">`;       
         }else{
-            RespuestaC.innerHTML = `<h3>El cuadrilátero es un trapecio<h3/>`;
+            RespuestaC.innerHTML = `
+            <h3>El cuadrilátero es un trapecio</h3>
+            <img src="publico/imagenes/trapecio.png">`;
         }
     }
 
