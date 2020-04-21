@@ -23,7 +23,7 @@ function triangulo(){
         return
     }
     if (arr[0]==0) {
-        RespuestaT.innerHTML = `<h3>En ningún campo 0 es valido</h3>`;
+        RespuestaT.innerHTML = `<h3>En ningún campo 0 es válido</h3>`;
         return
     }
     if (arr[0]+arr[1]<arr[2]) {
@@ -63,7 +63,7 @@ function cuadrado(){
         return
     }
     if (arr[0]==0) {
-        RespuestaC.innerHTML = `<h3>En ningún campo 0 es valido</h3>`;
+        RespuestaC.innerHTML = `<h3>En ningún campo 0 es válido</h3>`;
         return
     }
     if (arr[0]+arr[1]+arr[2]<arr[3]) {
