@@ -28,7 +28,7 @@ function triangulo(){
     }
     if (arr[0]+arr[1]<arr[2]) {
         RespuestaT.innerHTML = `
-        <h3>No se puede hacer un triangulo</h3>
+        <h3>No se puede hacer un triángulo</h3>
         <img src="publico/imagenes/notriangulo.png">`;
         return
     }
