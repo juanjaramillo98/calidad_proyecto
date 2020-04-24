@@ -10,6 +10,12 @@ let Clado2 = document.getElementById('clado2');
 let Clado3 = document.getElementById('clado3');
 let Clado4 = document.getElementById('clado4');
 
+function digitos(){
+    if(this.value.length > this.maxLength){
+        this.value = this.value.slice(0, this.maxLength);
+    }   
+}
+
 function triangulo(){
     
     var lado1 = Tlado1.valueAsNumber;
